@@ -4,7 +4,7 @@ import picture from "../public/google.jpg";
 function ProjectElement({ projectData, alignLeft = false }) {
   return (
     <div className="flex flex-col gap-2 ">
-      <Image
+      <img
         src={projectData.image}
         fill
         style={{ background: "var(--basic-text)" }}

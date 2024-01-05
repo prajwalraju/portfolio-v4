@@ -22,7 +22,7 @@ function CompanyDetailsElement({companyDetails}) {
         <div className="descriptionContainer flex flex-col gap-4">
           {companyDetails.descriptions.map((description, index) => (
             <div className="description flex gap-2" key={index}>
-              <Image
+              <img
                 className="descriptionPointer w-4 h-fit"
                 alt=""
                 src="/pointer.png"

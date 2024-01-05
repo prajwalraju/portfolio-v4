@@ -32,7 +32,7 @@ function Experience() {
         </div>
         <div className="resumeConatiner flex gap-2 items-center">
           <b>View Full Resume</b>
-          <Image
+          <img
                 className="resumePointer w-2 h-fit "
                 alt=""
                 src="/pointer.png"
