@@ -7,7 +7,7 @@ function ContactMe() {
   return (
     <div className="pt-5 flex gap-10 items-center justify-center">
         {data.contactDetails.map(value => (
-          <Link href={value.link}>
+          <Link href={value.link} key={value.name}>
             <Image className="vectorIcon " alt="" height={30} width={30} src={value.logo} />
           </Link>
         ))}

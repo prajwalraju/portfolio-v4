@@ -1,3 +1,4 @@
+import Image from "next/image"
 
 function CompanyDetailsElement({companyDetails}) {
   return (
@@ -15,13 +16,13 @@ function CompanyDetailsElement({companyDetails}) {
         </div>
         <div className="techStack flex gap-2">
           {companyDetails.techStack.map((tech, index) => (
-            <p>{tech}</p>
+            <p key={index}>{tech}</p>
           ))}
         </div>
         <div className="descriptionContainer flex flex-col gap-4">
           {companyDetails.descriptions.map((description, index) => (
-            <div className="description flex gap-2">
-              <img
+            <div className="description flex gap-2" key={index}>
+              <Image
                 className="descriptionPointer w-4 h-fit"
                 alt=""
                 src="/pointer.png"

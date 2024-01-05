@@ -10,7 +10,7 @@ function NavBar() {
       <Image className="logo" alt="Logo" width={40} src={Logo} />
       <div className="navMenu w-full  flex gap-2 overflow-scroll justify-center items-center">
         {Object.entries(data.navBarData).map(([key, value]) => (
-          <Link href={value.link}>
+          <Link href={value.link} key={key}>
             <p className="link"> {value.name}</p>
           </Link>
         ))}

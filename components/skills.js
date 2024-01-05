@@ -8,7 +8,7 @@ function Skills() {
       <b className="text-xl">What I Do</b>
       <div className="flex flex-col gap-4">
         {data.skills.map((skill, index) => (
-          <Skill skill={skill} />
+          <Skill skill={skill} key={index}/>
         ))}
       </div>
     </div>
