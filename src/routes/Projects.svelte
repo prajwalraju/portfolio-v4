@@ -6,7 +6,7 @@
 
 <div class="flex flex-col gap-10">
   <b class="text-xl">What I MAKE</b>
-  <div class="flex flex-col gap-10">
+  <div class="flex flex-col gap-24">
     {#each Object.keys(projects) as projectName (projectName)}
       <ProjectElement projectData={projects[projectName]} />
     {/each}
