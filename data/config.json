@@ -13,12 +13,12 @@
         {
             "name": "twitter",
             "logo": "/twitterLogo.png",
-            "link": "https://twitter.com/prajwalrajup"
+            "link": "https://twitter.com/Prajwal_Raju_P"
         },
         {
             "name": "github",
             "logo": "/githubLogo.png",
-            "link": "https://github.com/prajwalrajup"
+            "link": "https://github.com/prajwalraju"
         }
     ],
     "navBarData": {
@@ -108,7 +108,7 @@
             ],
             "linkOfGithub": true,
             "link": "https://github.com/prajwalraju/",
-            "image": "/google.jpg"
+            "image": "/featuredProjects/poseidon.png"
         },
         "Robust robot": {
             "title": "Analysis of Robust control methods for rigid robots.",
@@ -118,7 +118,7 @@
             ],
             "linkOfGithub": false,
             "link": "https://www.jetir.org/view?paper=JETIR2010055",
-            "image": "/google.jpg"
+            "image": "/featuredProjects/paper.png"
         },
         "Sign to Speech": {
             "title": "Sign to Speech",
@@ -131,7 +131,7 @@
             ],
             "linkOfGithub": true,
             "link": "https://github.com/Sign-to-speech",
-            "image": "/google.jpg"
+            "image": "/featuredProjects/signToSpeach.png"
         }
     }
 }
