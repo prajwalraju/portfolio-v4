@@ -1,3 +1,4 @@
+@import '@fontsource/fira-mono';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,21 +9,8 @@
   --background: #08070b;
   --highlight-text: #f2f2f2;
   --basic-text: #8f9ba8;
-}
 
-@media (prefers-color-scheme: dark) {
-  /* :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  } */
-}
-
-body {
   color: var(--basic-text);
   background-color: var(--background);
 }
 
-.mt-screen {
-  margin-top: 100vh; /* 100vh is the height of the viewport */
-}

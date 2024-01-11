@@ -2,22 +2,22 @@
     "contactDetails": [
         {
             "name": "gmail",
-            "logo": "/gmailLogo.png",
+            "logo": "/contactMe/gmailLogo.png",
             "link": "mailto:prajwalrajup@gmail.com"
         },
         {
             "name": "linkedin",
-            "logo": "/linkedinLogo.png",
+            "logo": "/contactMe/linkedinLogo.png",
             "link": "https://www.linkedin.com/in/prajwalrajup/"
         },
         {
             "name": "twitter",
-            "logo": "/twitterLogo.png",
+            "logo": "/contactMe/twitterLogo.png",
             "link": "https://twitter.com/Prajwal_Raju_P"
         },
         {
             "name": "github",
-            "logo": "/githubLogo.png",
+            "logo": "/contactMe/githubLogo.png",
             "link": "https://github.com/prajwalraju"
         }
     ],
@@ -58,7 +58,7 @@
             ],
             "descriptions": [
                 "Developed services to provide configurations to the front end application",
-                "Developed services to provide configurations to the front end application"
+                "Developed services to provide configurationssdf to the front end application"
             ]
         },
         "Sixinterns": {
