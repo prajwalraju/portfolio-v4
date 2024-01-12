@@ -17,7 +17,7 @@
   </div>
   <div class="flex w-full justify-center">
   <div
-    class="contentContainer flex flex-col gap-24 content-center justify-center w-full md:w-[30rem] lg:w-[50rem] xl:w-[50rem] 2xl:w-[50rem]"
+    class="contentContainer flex flex-col gap-24 content-center justify-center w-full md:w-[30rem] lg:w-[50rem]"
   >
     <About />
     <Experience />

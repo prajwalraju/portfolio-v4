@@ -3,7 +3,7 @@
   let contactDetails = config.contactDetails;
 </script>
 
-<div class="pt-20 flex gap-10 items-center justify-center">
+<div class="container pt-20 flex gap-10 items-center justify-center flex-row lg:flex-col lg:fixed lg:bottom-0 lg:left-0 lg:justify-start lg:items-start lg:m-10">
   {#each Object.keys(contactDetails) as contactName (contactName)}
     <a href={contactDetails[contactName].link}>
       <img

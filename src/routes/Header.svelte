@@ -4,7 +4,7 @@
 </script>
 
 <header
-  class="flex flex-1 w-full flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row gap-2"
+  class="flex flex-1 w-full flex-col md:flex-row lg:flex-row gap-2"
 >
   <a href="/" class="w-10">
     <img src={logo} alt="Prajwal Raju P" />

@@ -4,7 +4,7 @@
   import "./styles.css";
 </script>
 
-<div class="app flex flex-col p-3">
+<div class="app flex flex-col p-3 lg:p-10">
   <Header />
 
   <main>

@@ -5,9 +5,9 @@
 <div class="flex flex-col gap-10">
   <b class="text-xl">Bio</b>
   <div
-    class="aboutContainer flex flex-col  lg:flex-row xl:flex-row 2xl:flex-row gap-4"
+    class="aboutContainer flex flex-col  lg:flex-row gap-4"
   >
-    <img src={picture} alt="" class="My-profile-picture flex-1 rounded-lg lg:w-96 xl:w-96 2xl:w-96" />
+    <img src={picture} alt="" class="My-profile-picture flex-1 rounded-lg lg:w-96" />
     <div class="aboutTextContainer flex-1 flex flex-col gap-3">
       <p>
         <span class="highlightText">Hey, I’m Prajwal Raju P </span>
