@@ -1,38 +1,57 @@
-# create-svelte
+# Prajwal Raju P - Personal Portfolio
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Welcome to the 4th version of my personal portfolio! This iteration showcases my evolving skills, projects, and experiences using SvelteKit. As I continue to grow in my journey, this portfolio serves as a testament to my ongoing development and commitment to excellence. This project showcases my skills, projects, and experiences. Explore the latest version of my portfolio [Version 4](https://main--v4-prajwalrajup.netlify.app).
 
-## Creating a project
+## Explore Previous Versions
+Take a trip down memory lane and explore the previous version of my portfolio.
+- [Version 3](https://prajwalrajup.in/)
+- [Version 2]()
+- [Version 1]()
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Table of Contents
+- [About](#about)
+- [Features](#features)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## About
+This personal portfolio is designed to provide an overview of my professional journey, skills, and projects. It is built with SvelteKit, a powerful framework for building web applications.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Features
+- **Responsive Design:** Ensures a seamless experience on various devices.
+- **Dynamic Content:** Easily update and customize the content to reflect your latest achievements and projects.
+- **SvelteKit:** Leverages the capabilities of SvelteKit for efficient development and fast-loading web pages.
 
-## Developing
+## Setup
+Follow these steps to set up the project locally:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v14 or later)
+- [npm](https://www.npmjs.com/) (v7 or later)
 
-```bash
-npm run dev
+### Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/prajwalraju/portfolio-v4
+    cd portfolio-v4
+    ```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+2. Install dependencies:
+   ```bash
+   yarn
+   ```
 
-## Building
+### Usage
+1. Start the development server:
+    ```bash
+    yarn dev
+    ```
+2. Open http://localhost:3000 in your browser to view the application.
 
-To create a production version of your app:
+## Contributing
+If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request. Contributions are welcome!
 
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## License
+This project is licensed under the GNU GENERAL PUBLIC LICENSE License.
