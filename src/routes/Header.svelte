@@ -2,7 +2,6 @@
   import { page } from "$app/stores";
   import logo from "$lib/images/Logo.svg";
   import config from "$lib/config.json";
-  console.log("url", $page.url);
 </script>
 
 <header class="flex flex-1 w-full flex-col md:flex-row lg:flex-row gap-2">

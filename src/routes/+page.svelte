@@ -1,4 +1,5 @@
 <script>
+  export let data;
   import About from "./About.svelte";
   import Experience from "./Experience.svelte";
   import Hero from "./Hero.svelte";
@@ -16,13 +17,13 @@
     <Hero />
   </div>
   <div class="flex w-full justify-center">
-  <div
-    class="contentContainer flex flex-col gap-24 content-center justify-center w-full md:w-[30rem] lg:w-[50rem]"
-  >
-    <About />
-    <Experience />
-    <Skills />
-    <Projects />
+    <div
+      class="contentContainer flex flex-col gap-24 content-center justify-center w-full md:w-[30rem] lg:w-[50rem]"
+    >
+      <About />
+      <Experience companies={data.data.companies} />
+      <Skills skills={data.data.skills} />
+      <Projects projects={data.data.featuredProjects} />
+    </div>
   </div>
-</div>
 </section>
