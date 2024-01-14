@@ -35,7 +35,7 @@
     </div>
     <a
       class="resumeConatiner flex gap-2 items-center"
-      href="/PRAJWAL RAJU P.pdf"
+      href="https://raw.githubusercontent.com/prajwalraju/prajwalraju/main/PRAJWAL%20RAJU%20P.pdf"
     >
       <b class="text-highlightColor">View Full Resume</b>
       <img class="resumePointer w-2 h-fit" alt="" src={pointer} />
