@@ -13,15 +13,26 @@
   <nav class="justify-center flex w-full">
     <ul class="navMenu flex gap-2 overflow-scroll items-center">
       {#each Object.keys(config.navBarData) as element (element)}
-        <div class="flex flex-col">
-          <a href={config.navBarData[element].link}
+        <div
+          class="flex flex-col p-2 rounded transition ease-in-out delay-150 hover:bg-[#212024] items-center"
+        >
+          <a
+            href={config.navBarData[element].link}
+            class:selectedHeader={$page.url.hash ==
+              config.navBarData[element].link}
             >{config.navBarData[element].name}</a
           >
           {#if $page.url.hash == config.navBarData[element].link}
-            <div class="border-u bg-highlightColor h-0.5"></div>
+            <div class="border-u w-[50%] bg-highlightColor h-0.5"></div>
           {/if}
         </div>
       {/each}
     </ul>
   </nav>
 </header>
+
+<style>
+  .selectedHeader {
+    color: var(--highlight-text);
+  }
+</style>

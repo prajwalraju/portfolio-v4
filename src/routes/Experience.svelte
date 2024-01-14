@@ -12,15 +12,16 @@
 
 <div id="career" class="experienceContainer flex flex-col gap-10">
   <b class="text-xl text-highlightColor">History</b>
-  <div class="companyContainer flex flex-col xl:flex-row 2xl:flex-row gap-4">
+  <div class="companyContainer flex flex-col lg:flex-row gap-4">
     <div
-      class="companyListContainer flex flex-row gap-2 xl:flex-col overflow-scroll xl:overflow-visible xl:gap-0 content-center whitespace-nowrap"
+      class="companyListContainer flex flex-row gap-2 lg:flex-col overflow-scroll lg:overflow-visible lg:gap-0 content-center whitespace-nowrap"
     >
       {#each Object.keys(config.companies) as companyName (companyName)}
-        <button
-          on:click={() => updateSelectedCompany(companyName)}
-        >
-          <CompanyElement {companyName} selected={selectedCompany == companyName}/>
+        <button on:click={() => updateSelectedCompany(companyName)}>
+          <CompanyElement
+            {companyName}
+            selected={selectedCompany == companyName}
+          />
         </button>
       {/each}
     </div>
