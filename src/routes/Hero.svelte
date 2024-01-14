@@ -12,7 +12,7 @@
 </script>
 
 <div
-  class="flex flex-col items-center gap-6 text-7xl lg:text-8xl justify-center"
+  class="flex flex-col items-center gap-6 text-5xl md:text-7xl lg:text-8xl justify-center"
   on:mousemove={updateImagePosition}
   role="presentation"
 >
