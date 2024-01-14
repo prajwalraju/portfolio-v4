@@ -3,32 +3,27 @@
   import pointer from "$lib/images/pointer.png";
   import { differenceInMonths, differenceInYears } from "date-fns";
 
-  $: startDate = new Date();
-  $: startDateInString = "";
-  $: endDateInString = "";
-  $: endDate = new Date();
-  $: timeDifferenceInString = "";
 
-  if (Object.keys(companyDetails).length) {
-    startDate = new Date(companyDetails.startDate);
-    startDateInString = startDate.toLocaleString("en-US", {
+
+
+  $:startDate = new Date(companyDetails.startDate);
+    $:startDateInString = startDate.toLocaleString("en-US", {
       year: "numeric",
       month: "long",
     });
 
-    endDateInString =
+    $:endDateInString =
       companyDetails.endDate == null
         ? "Present"
         : new Date(companyDetails.endDate).toLocaleString("en-US", {
             year: "numeric",
             month: "long",
           });
-    endDate =
+          $: endDate =
       companyDetails.endDate == null
         ? new Date()
         : new Date(companyDetails.endDate);
-    timeDifferenceInString = dateDifference(endDate, startDate);
-  }
+   $: timeDifferenceInString = dateDifference(endDate, startDate);
 
   function dateDifference(date1, date2) {
     let diffInYears = differenceInYears(date1, date2);
