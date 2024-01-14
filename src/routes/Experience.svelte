@@ -5,16 +5,23 @@
   import pointer from "$lib/images/pointer.png";
 
   let selectedCompany = Object.keys(config.companies)[0];
+  function updateSelectedCompany(companyName) {
+    selectedCompany = companyName;
+  }
 </script>
 
-<div class="experienceContainer flex flex-col gap-10">
-  <b class="text-xl">History</b>
+<div id="career" class="experienceContainer flex flex-col gap-10">
+  <b class="text-xl text-highlightColor">History</b>
   <div class="companyContainer flex flex-col xl:flex-row 2xl:flex-row gap-4">
     <div
-      class="companyListContainer flex flex-row xl:flex-col 2xl:flex-col overflow-scroll xl:overflow-visible 2xl:overflow-visible gap-4 content-center whitespace-nowrap"
+      class="companyListContainer flex flex-row gap-2 xl:flex-col overflow-scroll xl:overflow-visible xl:gap-0 content-center whitespace-nowrap"
     >
       {#each Object.keys(config.companies) as companyName (companyName)}
-        <CompanyElement {companyName} />
+        <button
+          on:click={() => updateSelectedCompany(companyName)}
+        >
+          <CompanyElement {companyName} selected={selectedCompany == companyName}/>
+        </button>
       {/each}
     </div>
     <div class="companyDetails p-4 rounded-lg">
@@ -23,10 +30,10 @@
       />
     </div>
   </div>
-  <div class="resumeConatiner flex gap-2 items-center">
-    <b>View Full Resume</b>
+  <a class="resumeConatiner flex gap-2 items-center" href="/PRAJWAL RAJU P.pdf">
+    <b class="text-highlightColor">View Full Resume</b>
     <img class="resumePointer w-2 h-fit" alt="" src={pointer} />
-  </div>
+  </a>
 </div>
 
 <style>

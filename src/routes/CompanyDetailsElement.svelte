@@ -1,19 +1,48 @@
 <script>
   export let companyDetails;
   import pointer from "$lib/images/pointer.png";
+  import { differenceInMonths, differenceInYears } from "date-fns";
+
+  $: startDate = new Date(companyDetails.startDate);
+  $: startDateInString = startDate.toLocaleString("en-US", {
+    year: "numeric",
+    month: "long",
+  });
+
+  $: endDateInString =
+    companyDetails.endDate == null
+      ? "Present"
+      : new Date(companyDetails.endDate).toLocaleString("en-US", {
+          year: "numeric",
+          month: "long",
+        });
+  $: endDate =
+    companyDetails.endDate == null
+      ? new Date()
+      : new Date(companyDetails.endDate);
+
+  function dateDifference(date1, date2) {
+    let diffInYears = differenceInYears(date1, date2);
+    let diffInMonths = differenceInMonths(date1, date2) % 12;
+    return diffInYears === 0
+      ? `${diffInMonths} mos`
+      : `${diffInYears} yrs ${diffInMonths} mos`;
+  }
+
+  $: timeDifferenceInString = dateDifference(endDate, startDate);
 </script>
 
 <div class="companyDetailsContainer flex flex-col gap-4">
-  <b>{companyDetails.designation}</b>
+ <b class="text-highlightColor">{companyDetails.designation}</b>
   <div>
-    <span class="companyName">{companyDetails.name}</span>
+    <span class="companyName text-highlightColor">{companyDetails.name}</span>
     <span> • </span>
     <span class="companyLocation">{companyDetails.location}</span>
   </div>
   <div>
-    <span class="timeLine">April 2021 - Present</span>
+    <span class="timeLine">{startDateInString} - {endDateInString}</span>
     <span> • </span>
-    <span class="duration">2 yr 5 mos</span>
+    <span class="duration">{timeDifferenceInString}</span>
   </div>
   <div class="techStack flex gap-2">
     {#each companyDetails.techStack as tech (tech)}

@@ -27,20 +27,12 @@
             "name": "ABOUT"
         },
         "CAREER": {
-            "link": "",
+            "link": "#career",
             "name": "CAREER"
         },
         "PROJECTS": {
-            "link": "",
+            "link": "#projects",
             "name": "PROJECTS"
-        },
-        "USES": {
-            "link": "",
-            "name": "USES"
-        },
-        "REMINDER": {
-            "link": "",
-            "name": "REMINDER"
         }
     },
     "companies": {
@@ -65,8 +57,8 @@
             "name": "Sixinterns",
             "designation": "Full-Stack Intern",
             "location": "Bangalore, INDIA",
-            "startDate": "2021-02-01",
-            "endDate": "2021-03-01",
+            "startDate": "2021-01-01",
+            "endDate": "2021-04-01",
             "techStack": [
                 "react",
                 "javascript"

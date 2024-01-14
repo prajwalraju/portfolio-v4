@@ -20,7 +20,7 @@
     class="projectDescription flex-1 flex flex-col gap-4"
     class:descriptionAlignLeft={!alignLeft}
   >
-    <b>{projectData.title}</b>
+    <b class=" text-highlightColor">{projectData.title}</b>
     <p class="descText" class:marginRight={alignLeft}>
       {projectData.description}
     </p>
