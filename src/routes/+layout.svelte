@@ -2,6 +2,7 @@
   import ContactMe from "./ContactMe.svelte";
   import Header from "./Header.svelte";
   import "./styles.css";
+  import "animate.css";
   export let data;
 </script>
 

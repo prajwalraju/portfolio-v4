@@ -20,6 +20,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"animate.css": "^4.1.1",
 		"date-fns": "^3.2.0",
 		"dotenv": "^16.3.1"
 	}

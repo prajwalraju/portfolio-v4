@@ -9,13 +9,17 @@
     mousePositionX = (event.clientX / window.innerWidth) * 10;
     mousePositionY = (event.clientY / window.innerHeight) * 10;
   }
+
+  import { onMount } from "svelte";
+  let isVisible = false;
+  onMount(() => {
+    setTimeout(() => {
+      isVisible = true;
+    }, 200);
+  });
 </script>
 
-<div
-  class="flex flex-col items-center gap-6 text-5xl md:text-7xl lg:text-8xl justify-center"
-  on:mousemove={updateImagePosition}
-  role="presentation"
->
+<div on:mousemove={updateImagePosition} role="presentation">
   <div class="bgImage hidden lg:block">
     <img
       src={ellipse}
@@ -36,14 +40,30 @@
       style="transform: translate(-{mousePositionX}%, -{mousePositionY}%);"
     />
   </div>
-  <b class="text-xl text-highlightColor">PRAJWAL RAJU P</b>
-  <b class="text-highlightColor">CREATING</b>
-  <div class="accentText bg-accentColor flex flex-col items-center">
-    <p>SOME</p>
-    <p>SHIT</p>
+
+  <div
+    class="flex flex-col items-center gap-6 text-5xl md:text-7xl lg:text-8xl justify-center hidden-div"
+    class:visible-div={isVisible}
+  >
+    <b class="text-xl text-highlightColor animate__animated animate__fadeInDown"
+      >PRAJWAL RAJU P</b
+    >
+    <b class="text-highlightColor animate__animated animate__fadeInDown"
+      >CREATING</b
+    >
+    <div
+      class="accentText bg-accentColor flex flex-col items-center animate__animated animate__fadeInDown"
+    >
+      <p>SOME</p>
+      <p>SHIT</p>
+    </div>
+    <p class="text-highlightColor animate__animated animate__fadeInDown">
+      SINCE
+    </p>
+    <p class="text-highlightColor animate__animated animate__fadeInDown">
+      2019
+    </p>
   </div>
-  <p class="text-highlightColor">SINCE</p>
-  <p class="text-highlightColor">2019</p>
 </div>
 
 <style>
@@ -55,5 +75,14 @@
     );
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  .hidden-div {
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Optional: Add a smooth transition effect */
+  }
+
+  .visible-div {
+    opacity: 1;
   }
 </style>
