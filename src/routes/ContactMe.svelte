@@ -23,7 +23,7 @@
       <img
         class="vectorIcon w-8"
         alt=""
-        src="/contactMe/{contactDetails[contactName].name}Logo.png"
+        src="/contactMe/{contactDetails[contactName].name}Logo.svg"
       />
     </a>
   {/each}

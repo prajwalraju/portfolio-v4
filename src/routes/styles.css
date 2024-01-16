@@ -9,6 +9,7 @@
   --background: #08070b;
   --highlight-text: #f2f2f2;
   --basic-text: #8f9ba8;
+  --accent: linear-gradient( 215deg,#ffafd8 20.81%,rgba(208, 157, 251, 0) 137.36%);
 
   color: var(--basic-text);
   background-color: var(--background);

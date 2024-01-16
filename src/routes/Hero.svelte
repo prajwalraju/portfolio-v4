@@ -68,11 +68,7 @@
 
 <style>
   .accentText {
-    background: linear-gradient(
-      215deg,
-      #ffafd8 20.81%,
-      rgba(208, 157, 251, 0) 137.36%
-    );
+    background: var(--accent);
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
