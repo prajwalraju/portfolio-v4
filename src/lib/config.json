@@ -11,6 +11,10 @@
         "PROJECTS": {
             "link": "#projects",
             "name": "PROJECTS"
+        },
+        "RESUME": {
+            "link": "https://raw.githubusercontent.com/prajwalraju/prajwalraju/main/PRAJWAL%20RAJU%20P.pdf",
+            "name": "RESUME"
         }
     }
 }

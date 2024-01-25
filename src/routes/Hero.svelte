@@ -15,12 +15,13 @@
   onMount(() => {
     setTimeout(() => {
       isVisible = true;
-    }, 200);
+    }, 400);
   });
 </script>
 
 <div on:mousemove={updateImagePosition} role="presentation">
-  <div class="bgImage hidden lg:block">
+  <div class="bgImage hidden lg:block "
+  class:show={isVisible}>
     <img
       src={ellipse}
       alt=""
@@ -42,8 +43,8 @@
   </div>
 
   <div
-    class="flex flex-col items-center gap-6 text-5xl md:text-7xl lg:text-8xl justify-center hidden-div"
-    class:visible-div={isVisible}
+    class="flex-col items-center gap-6 text-5xl md:text-7xl lg:text-8xl justify-center hidden"
+    class:show={isVisible}
   >
     <b class="text-xl text-highlightColor animate__animated animate__fadeInDown"
       >PRAJWAL RAJU P</b
@@ -73,12 +74,12 @@
     background-clip: text;
   }
 
-  .hidden-div {
-    opacity: 0;
-    transition: opacity 0.5s ease; /* Optional: Add a smooth transition effect */
+  .hidden {
+    display: none;
+    transition: opacity 2s ease;
   }
 
-  .visible-div {
-    opacity: 1;
+  .show {
+    display: flex;
   }
 </style>

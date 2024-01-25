@@ -14,7 +14,7 @@
       {#each Object.keys(config.navBarData) as element, index (element)}
         <div
           class="flex flex-col p-2 rounded hover:bg-hoverColor items-center animate__animated animate__fadeInDown"
-          style="--animate-duration:{(index + 1) * 0.3}s"
+          style="--animate-duration:{(index + 1) * 0.5}s"
         >
           <a
             href={config.navBarData[element].link}

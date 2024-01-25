@@ -6,7 +6,7 @@
   onMount(() => {
     setTimeout(() => {
       isVisible = true;
-    }, 500);
+    }, 900);
   });
 </script>
 
