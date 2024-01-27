@@ -20,8 +20,7 @@
 </script>
 
 <div on:mousemove={updateImagePosition} role="presentation">
-  <div class="bgImage hidden lg:block "
-  class:show={isVisible}>
+  <div class="bgImage hidden lg:block" class:showImage={isVisible}>
     <img
       src={ellipse}
       alt=""
@@ -79,6 +78,11 @@
     transition: opacity 2s ease;
   }
 
+  @media (min-width: 1024px) {
+    .showImage {
+      display: flex;
+    }
+  }
   .show {
     display: flex;
   }
