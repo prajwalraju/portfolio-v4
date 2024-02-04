@@ -9,6 +9,8 @@
   import SplashScreen from "./SplashScreen.svelte";
   import "./styles.css";
   import "animate.css";
+  import AOS from "aos";
+  import "aos/dist/aos.css";
   export let data;
 
   let showSplash = true;
@@ -17,6 +19,13 @@
     setTimeout(() => {
       showSplash = false;
     }, 800);
+    setTimeout(() => {
+      AOS.init({
+        once: true,
+        duration: 900,
+        easing: "ease-in-out",
+      });
+    }, 0);
   });
 </script>
 

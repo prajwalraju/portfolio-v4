@@ -6,6 +6,7 @@
 </script>
 
 <div
+  data-aos="fade-in"
   class="projectContainer flex flex-col lg:flex-row gap-8"
   class:containerAlignLeft={alignLeft}
 >

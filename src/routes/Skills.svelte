@@ -8,8 +8,8 @@
   }
 </script>
 
-{#if skills.length}
-  <div class="flex flex-col gap-10">
+<div data-aos="fade-in" class="flex flex-col gap-10">
+  {#if skills.length}
     <b class="text-xl text-highlightColor">What I Do</b>
     <div class="flex flex-col gap-4">
       {#each skills as skill (skill)}
@@ -22,5 +22,5 @@
         </button>
       {/each}
     </div>
-  </div>
-{/if}
+  {/if}
+</div>

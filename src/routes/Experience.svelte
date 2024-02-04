@@ -13,8 +13,12 @@
   }
 </script>
 
-{#if Object.keys(companies).length}
-  <div id="career" class="experienceContainer flex flex-col gap-10">
+<div
+  data-aos="fade-in"
+  id="career"
+  class="experienceContainer flex flex-col gap-10"
+>
+  {#if Object.keys(companies).length}
     <b class="text-xl text-highlightColor">History</b>
     <div class="companyContainer flex flex-col lg:flex-row gap-4">
       <div
@@ -40,8 +44,8 @@
       <b class="text-highlightColor">View Full Resume</b>
       <img class="resumePointer w-2 h-fit" alt="" src={pointer} />
     </a>
-  </div>
-{/if}
+  {/if}
+</div>
 
 <style>
   .companyDetails {
