@@ -1,6 +1,8 @@
 # Prajwal Raju P - Personal Portfolio
 
-Welcome to the 4th version of my personal portfolio! This iteration showcases my evolving skills, projects, and experiences using SvelteKit. As I continue to grow in my journey, this portfolio serves as a testament to my ongoing development and commitment to excellence. This project showcases my skills, projects, and experiences. Explore the latest version of my portfolio [Version 4](https://v4-prajwalrajup.netlify.app).
+Welcome to the 4th version of my personal portfolio! This iteration showcases my evolving skills, projects, and experiences using SvelteKit. As I continue to grow in my journey, this portfolio serves as a testament to my ongoing development and commitment to excellence. This project showcases my skills, projects, and experiences. I may or may not have stolen ideas from Portfolios of [Brittany Chiang](https://brittanychiang.com/archive), [Zeno Rocha](https://zenorocha.com/projects), and [Minh Pham](https://minhpham.design/). Explore the latest version of my portfolio [Version 4](https://v4-prajwalrajup.netlify.app).
+
+
 
 ## Explore Previous Versions
 Take a trip down memory lane and explore the previous version of my portfolio.
