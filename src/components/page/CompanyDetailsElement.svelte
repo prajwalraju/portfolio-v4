@@ -3,9 +3,6 @@
   import pointer from "$lib/images/pointer.png";
   import { differenceInMonths, differenceInYears } from "date-fns";
 
-
-
-
   $:startDate = new Date(companyDetails.startDate);
     $:startDateInString = startDate.toLocaleString("en-US", {
       year: "numeric",

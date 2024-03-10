@@ -1,10 +1,10 @@
 <script>
   export let data;
-  import About from "./About.svelte";
-  import Experience from "./Experience.svelte";
-  import Hero from "./Hero.svelte";
-  import Projects from "./Projects.svelte";
-  import Skills from "./Skills.svelte";
+  import About from "../components/page/About.svelte";
+  import Experience from "../components/page/Experience.svelte";
+  import Hero from "../components/page/Hero.svelte";
+  import Projects from "../components/page/Projects.svelte";
+  import Skills from "../components/page/Skills.svelte";
 </script>
 
 <svelte:head>
