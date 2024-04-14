@@ -5,6 +5,7 @@ export default {
     colors:{
       'highlightColor':"#f2f2f2",
       'hoverColor':"#212024",
+      'backgroundSeleted':'#0e0e13',
       'accentColor': 'linear-gradient( 215deg,#ffafd8 20.81%,rgba(208, 157, 251, 0) 137.36%)'
     },
     extend: {

@@ -7,6 +7,7 @@
   /* Colors */
   --background-grey: #212024;
   --background: #08070b;
+  --background-selected: #0e0e13;
   --highlight-text: #f2f2f2;
   --basic-text: #8f9ba8;
   --accent: linear-gradient( 215deg,#ffafd8 20.81%,rgba(208, 157, 251, 0) 137.36%);
