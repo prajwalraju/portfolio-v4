@@ -1,15 +1,11 @@
 {
     "navBarData": {
         "ABOUT": {
-            "link": "",
+            "link": "/",
             "name": "ABOUT"
         },
-        "CAREER": {
-            "link": "#career",
-            "name": "CAREER"
-        },
         "PROJECTS": {
-            "link": "#projects",
+            "link": "/projects",
             "name": "PROJECTS"
         },
         "RESUME": {
