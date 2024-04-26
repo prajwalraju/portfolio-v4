@@ -8,6 +8,10 @@
             "link": "/projects",
             "name": "PROJECTS"
         },
+        "PUBLICATIONS": {
+            "link": "/Publications",
+            "name": "PUBLICATIONS"
+        },
         "RESUME": {
             "link": "https://raw.githubusercontent.com/prajwalraju/prajwalraju/main/PRAJWAL%20RAJU%20P.pdf",
             "name": "RESUME"
